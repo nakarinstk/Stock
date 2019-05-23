@@ -15,9 +15,9 @@ def createDateTimeVar(timeFrame):
     if(timeFrame > 0 and type(timeFrame) == int):
         currentYear = datetime.datetime.now().year
         currentMonth = datetime.datetime.now().month
-        if currentYear - timeFrame < 1920:
-            startYear = 1920
-            print('Given time frame is over limit. Start Year is set to 1920.')
+        if currentYear - timeFrame < 1988:
+            startYear = 1988
+            print('Given time frame is over limit. Start Year is set to 1988.')
         else:
             startYear = currentYear - timeFrame
         startDate = datetime.datetime(startYear, 1, 1)
